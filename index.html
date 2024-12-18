@@ -156,7 +156,23 @@
           <div class="contact-form">
             <h2 class="contact-title section-title">Приєднуйтеся до мережі пекарень</h2>
             <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-            <!-- form -->
+            <form name="contact-form">
+              <div class="form-field">
+                <label class="form-label" for="user-name">Ім'я</label>
+                <input class="form-input" type="text" name="user-name" id="user-name">
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="user-phone">Телефон</label>
+                <input class="form-input" type="tel" name="user-phone" id="user-phone">
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="user-email">Електронна пошта</label>
+                <input class="form-input" type="email" name="user-email" id="user-email">
+              </div>
+              <button class="form-button button" type="submit">Замовити дзвінок</button>
+              <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="form-terms-link" href="#">політикою
+                  конфіденційності</a></p>
+            </form>
           </div>
           <iframe class="contact-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.163447036115!2d30.48869837606083!3d50.45668098691572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0LLRg9C70LjRhtGPINCh0ZbRh9C-0LLQuNGFINCh0YLRgNGW0LvRjNGG0ZbQsiwgNTQsINCa0LjRl9CyLCDQo9C60YDQsNGX0L3QsCwgMDIwMDA!5e0!3m2!1suk!2spl!4v1732107320728!5m2!1suk!2spl"
@@ -211,9 +227,27 @@
       </div>
     </div>
   </footer>
-  <div class="backdrop is-hidden">
+  <div class="backdrop">
     <div class="modal">
       <button class="modal-btn-close" type="button">Close</button>
+      <h2>Замовити дзвінок</h2>
+      <p>Залишіть заявку та наш спеціалість зв'яжеться з Вами!</p>
+      <form name="modal-form">
+        <div class="form-field">
+          <label class="form-label" for="user-name">Ім'я</label>
+          <input class="form-input" type="text" name="user-name" id="user-name">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="user-phone">Телефон</label>
+          <input class="form-input" type="tel" name="user-phone" id="user-phone">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="user-email">Електронна пошта</label>
+          <input class="form-input" type="email" name="user-email" id="user-email">
+        </div>
+        <button class="form-button button" type="submit">Замовити дзвінок</button>
+        <p class="form-terms">Натискаючи на кнопку я погоджуюсь з <a class="form-terms-link" href="#">політикою конфіденційності</a></p>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
