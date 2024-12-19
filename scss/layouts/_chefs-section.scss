@@ -1,0 +1,37 @@
+.chefs-section {
+    &__title {
+        position: relative;
+        margin: 0 auto 80px;
+
+        &::before,
+        &::after {
+            width: 352px;
+            border: 2px solid var(--color-brand-light);
+            content: '';
+        }
+
+        &::before {
+            position: absolute;
+            left: 0;
+            bottom: 24px;
+        }
+
+        &::after {
+            position: absolute;
+            right: 0;
+            bottom: 24px;
+        }
+    }
+
+
+
+    &__list {
+        display: flex;
+        gap: 40px 30px;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+}
