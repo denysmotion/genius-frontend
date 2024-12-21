@@ -24,7 +24,15 @@
             <li><a class="link" href="#">Контакти</a></li>
           </ul>
         </nav>
-        <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
+        <button class="header__button button modal-btn-open" type="button">Замовити дзвінок</button>
+        <button class="header__burger menu-btn-open">
+          <svg width="24px" height="24px">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu">
+          <button class="mobile-menu__btn-close menu-btn-close" type="button">X</button>
+        </div>
       </div>
     </div>
   </header>
@@ -32,6 +40,7 @@
     <section class="hero-section">
       <div class="container">
         <h1 class="hero-section__title"><span class="text-brand">Сучасна</span> пекарня</h1>
+        <button class="hero-section__button button modal-btn-open" type="button">Замовити дзвінок</button>
       </div>
     </section>
     <section class="advantages-section">
@@ -62,11 +71,12 @@
               та висока якість обслуговування!
             </p>
           </div>
-          <img src="./images/baker-man.jpg" alt="Чоловік пекар дивиться на хліб з посмішкою">
+          <img class="traditions-section__image" srcset="./images/baker-man.jpg 1x, ./images/baker-man@2x.jpg 2x"
+            src="./images/baker-man.jpg" alt="Чоловік пекар дивиться на хліб з посмішкою">
         </div>
       </div>
     </section>
-    <section class="chefs-section section" id="chefs-section">
+    <!-- <section class="chefs-section section" id="chefs-section">
       <div class="container">
         <h2 class="chefs-section__title section__title section__title--centered">Наші найкращі<br> <span
             class="text-brand">шеф-кухарі</span></h2>
@@ -98,8 +108,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="formats-section section" id="formats-section">
+    </section> -->
+    <!-- <section class="formats-section section" id="formats-section">
       <div class="container">
         <h2 class="formats-section__title section__title section__title--centered">Формати</h2>
         <div class="formats-section__container">
@@ -153,8 +163,8 @@
           </button>
         </div>
       </div>
-    </section>
-    <section class="contact-section section" id="contact-section">
+    </section> -->
+    <!-- <section class="contact-section section" id="contact-section">
       <div class="container">
         <div class="contact-section__container">
           <div class="contact-section__form">
@@ -184,9 +194,9 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-    </section>
+    </section> -->
   </main>
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer-container">
         <nav class="footer-nav">
@@ -230,7 +240,7 @@
         </address>
       </div>
     </div>
-  </footer>
+  </footer> -->
   <div class="backdrop is-hidden">
     <div class="modal">
       <button class="modal__btn-close modal-btn-close" type="button">Close</button>
@@ -255,6 +265,7 @@
       </form>
     </div>
   </div>
+  <script src="./js/mobile-menu.js"></script>
   <script src="./js/modal.js"></script>
 </body>
 
